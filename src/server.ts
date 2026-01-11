@@ -13,12 +13,8 @@ const app = express();
 // ================================
 // MIDDLEWARE
 // ================================
-app.use(
-  cors({
-    origin: "http://localhost:3000", // frontend
-    credentials: true,
-  })
-);
+app.use(cors());
+
 
 app.use(express.json());
 
